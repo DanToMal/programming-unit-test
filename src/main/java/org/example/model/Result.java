@@ -3,12 +3,12 @@ package org.example.model;
 public class Result<T extends Number> {
     private final T multiplicationResult;
     private final T divisionResult;
-    private final T remainder;
+    private final T modulo;
 
     public Result(T multiplicationResult, T divisionResult, T remainder) {
         this.multiplicationResult = multiplicationResult;
         this.divisionResult = divisionResult;
-        this.remainder = remainder;
+        this.modulo = remainder;
     }
 
     public Number getMultiplicationResult() {
@@ -19,7 +19,7 @@ public class Result<T extends Number> {
         return divisionResult;
     }
 
-    public Number getRemainder() {
-        return remainder;
+    public Number getModulo() {
+        return modulo;
     }
 }
